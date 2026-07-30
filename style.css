@@ -1,0 +1,275 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: white;
+}
+
+*::selection{
+    color: white;
+    background-color: #2FB1A4;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    margin: auto;
+    align-items: center;
+}
+
+.navbar img{
+    width: 190px;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.5s ease;
+    display: inline-block;
+    position: relative;
+    font-weight: 550;
+}
+
+.navbar ul a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.navbar ul a:hover{
+    color: #207B72;
+}
+
+.navbar ul a:hover::after{
+    transform: scaleX(1);
+    color: #207B72;
+}
+
+#home{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 660px;
+    margin: auto;
+    align-items: center;
+}
+
+#home .text{
+    width: 45%;
+}
+
+#home .text h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+#home .text p{
+    margin: 0;
+    height: 100px;
+}
+
+#home .text h2{
+    font-size: 30px;
+    
+}
+
+#home .text a{
+    text-decoration: none;
+    border: 3px black solid;
+    border-radius: 20px;
+    padding: 6px 15px 6px 15px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+#home .text a:hover{
+    background-color: #2FB1A4;
+}
+
+#home img{
+    width: 450px;
+}
+
+#aboutus{
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 170px;
+}
+
+.aboutus{
+    width: 40%;
+}
+
+.aboutus h2{
+    font-size: 30px;
+}
+
+.aboutus p{
+    font-size: 20px;
+    margin: 7px;
+}
+
+.aboutus a{
+    text-decoration: none;
+    color: #2FB1A4;
+    font-weight: 550;
+}
+
+.locations{
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.locations > *{
+    flex: 0 0 220px;
+}
+
+.location{
+    border: 2px black solid;
+    justify-content: center;
+    display: grid;
+    height: 170px;
+    max-width: 160px;
+    transition: transform 0.3s ease;
+}
+
+.location a, .location h3{
+    text-align: center;
+}
+
+.location:hover{
+    transform: scale(1.07);
+}
+
+#aboutus img{
+    width: 480px;
+    align-self: center;
+}
+
+#services{
+    height: 930px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.services{
+    display: grid;
+    grid-template-rows: 320px 320px 320px;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    justify-content: center;
+    
+}
+
+.service{
+    width: 220px;
+    height: 300px;
+    background-color: white;
+    justify-items: center;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 120px 30px;
+    border: black 3px solid;
+    transition: transform 0.3s ease;
+}
+
+.service:hover{
+    transform: scale(1.03);
+}
+
+.service img{
+    width: 200px;
+    margin-top: 5px;
+}
+
+.service p{
+    text-align: center;
+}
+
+.services > *:nth-child(11){
+    grid-column: 3;
+    grid-row: 3;
+}
+
+footer{
+    height: 400px;
+    display: flex;
+}
+
+.footer{
+    width: 100%;
+    height: 37%;
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .logo2{
+    width: 160px;
+    height: max-content;
+}
+
+.footer .footerh6 p{
+    width: 100px;
+    margin: 0;
+}
+
+.footer h6{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.footer .footer-logo{
+    display: flex;
+    width: 23%;
+    justify-content: left;
+}
+
+.contact{
+    display: grid;
+    grid-template-rows: 45px 30px 30px;
+}
+
+.contact h6{
+    text-align: left;
+}
+
+.footerhalf{
+    display: flex;
+    width: 100%;
+}
+
+.qr img{
+    width: 90px;
+    align-self: center;
+}
+
+.qr{
+    display: grid;
+    justify-content: right;
+
+}
